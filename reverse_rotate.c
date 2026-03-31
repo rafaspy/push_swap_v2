@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csekakul <csekakul@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rafsanch <rafsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 10:02:32 by csekakul          #+#    #+#             */
-/*   Updated: 2026/03/25 10:30:20 by csekakul         ###   ########.fr       */
+/*   Updated: 2026/03/31 00:02:35 by rafsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

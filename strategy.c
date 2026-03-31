@@ -75,13 +75,11 @@ void	sort_stack(t_stack *a, t_stack *b, t_strategy strategy)
 		index_stack(a);
 		chunk_sort(a);
 	}
-		else if (strategy == COMPLEX)
+	else if (strategy == COMPLEX)
 	{
 		index_stack(a);
 		radix_sort(a);
 	}
-		else if (strategy == ADAPTIVE)
+	else if (strategy == ADAPTIVE)
 		adaptive_sort(a);
 }
-
-

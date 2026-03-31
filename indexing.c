@@ -74,7 +74,6 @@ void	index_stack(t_stack *s)
 
 	sorted = copy_array(s->a, s->size_a);
 	sort_int_array(sorted, s->size_a);
-
 	i = 0;
 	while (i < s->size_a)
 	{

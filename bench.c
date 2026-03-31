@@ -21,7 +21,6 @@ void	print_ops_top(t_stack *s)
 	putstr_fd(" ss: ", 2);
 	putnbr_fd(s->ss_count, 2);
 	write(2, "\n", 1);
-
 	putstr_fd("pa: ", 2);
 	putnbr_fd(s->pa_count, 2);
 	putstr_fd(" pb: ", 2);
@@ -38,7 +37,6 @@ void	print_ops_bottom(t_stack *s)
 	putstr_fd(" rr: ", 2);
 	putnbr_fd(s->rr_count, 2);
 	write(2, "\n", 1);
-
 	putstr_fd("rra: ", 2);
 	putnbr_fd(s->rra_count, 2);
 	putstr_fd(" rrb: ", 2);
@@ -73,11 +71,11 @@ void	print_strategy(t_strategy strategy, double disorder)
 	else
 	{
 		if (disorder < 0.2)
-		putstr_fd("ADAPTIVE / O(n)\n", 2);
-	else if (disorder < 0.5)
-		putstr_fd("ADAPTIVE / O(n√n)\n", 2);
-	else
-		putstr_fd("ADAPTIVE / O(n log n)\n", 2);
+			putstr_fd("ADAPTIVE / O(n)\n", 2);
+		else if (disorder < 0.5)
+			putstr_fd("ADAPTIVE / O(n√n)\n", 2);
+		else
+			putstr_fd("ADAPTIVE / O(n log n)\n", 2);
 	}
 }
 

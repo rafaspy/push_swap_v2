@@ -44,7 +44,8 @@ typedef enum e_strategy
 	SIMPLE,
 	MEDIUM,
 	COMPLEX,
-	ADAPTIVE
+	ADAPTIVE,
+	COUNT
 }	t_strategy;
 
 typedef struct s_flags

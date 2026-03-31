@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csekakul <csekakul@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rafsanch <rafsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 10:00:19 by csekakul          #+#    #+#             */
-/*   Updated: 2026/03/25 10:28:40 by csekakul         ###   ########.fr       */
+/*   Updated: 2026/03/31 22:56:22 by rafsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ static int	push_a_internal(t_stack *s)
 		s->b[i] = s->b[i + 1];
 		i++;
 	}
-	s->size_b--;
-	return (1);
+	return (s->size_b--, 1);
 }
 
 static int	push_b_internal(t_stack *s)
@@ -68,8 +67,7 @@ static int	push_b_internal(t_stack *s)
 		s->a[i] = s->a[i + 1];
 		i++;
 	}
-	s->size_a--;
-	return (1);
+	return (s->size_a--, 1);
 }
 
 void	pa(t_stack *s)
